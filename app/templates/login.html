@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block title %} Before Sign in, check the address, change 127.0.0.1 to localhost {% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto social-container my-2 order-md-1">
+
+        <button class="btn btn-primary mb-2">
+            <a href="{% url 'social:begin' 'facebook' %}">Login with Facebook</a>
+        </button>
+
+    </div>
+</div>
+</div>
+{% endblock %}

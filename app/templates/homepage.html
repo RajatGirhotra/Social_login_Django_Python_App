@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-12 mb-3">
+        <h6 class="text-center">Welcome to the test App {{ user.username }}</h6>
+    </div>
+
+    {% for ass in backends.associated %}
+    {% if ass.provider == 'facebook' %}
+    <div class="col-md-6 text-center">
+        <img src="{{ass.extra_data.picture.data.url}}" alt="" width="150" height="150" style="border-radius: 50%">
+    </div>
+    <div class="col-md-6 social-container my-2">
+
+        <p> Name: {{ ass.extra_data.name }} </p>
+
+    </div>
+    {% endif %}
+
+    {% endfor %}
+    <div class="col-sm-12 mt-2 text-center">
+        <button class="btn btn-danger">
+            <a href="{% url 'logout' %}">Logout</a>
+        </button>
+    </div>
+    
+</div>
+{% endblock %}
