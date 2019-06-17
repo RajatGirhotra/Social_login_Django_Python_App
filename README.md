@@ -18,7 +18,7 @@ virtualenv -p python3 myenv
 source myenv/bin/activate
 
 ```
-# Dependencies
+ Dependencies
 1. social-auth-app-django
 ```
 pip install django social-auth-app-django 
