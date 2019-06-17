@@ -28,13 +28,12 @@ pip install django social-auth-app-django
 ```
 pip install django djangorestframework
 ```
-
-4. Run the migration 
+Running the App 
+1. Run the migration 
 ```
 python manage.py migrate
 ```
-
-5. Start the application 
+2. Start the application 
 ```
 python manage.py runserver
 ```
