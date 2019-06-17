@@ -39,7 +39,7 @@ python manage.py runserver
 8. And then in App Domains put localhost if running locally else put your website domain.
 9. Now go to Products > Facebook Login > Settings and put http://localhost:8000/app/deauthorize/ in the Deauthorize Callback URL. Or '/app/deauthorize/' if not running locally.
 
-# Extenisons 
+# Extensions 
 
 Chaging the URL can be avoided by instalaling SSL certificates. This can be done via Werkzeug.
 ```
