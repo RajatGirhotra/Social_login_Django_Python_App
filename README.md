@@ -1,6 +1,14 @@
 # Social-login-Django-Python-App
 This is a test app which handles the facebook login button using python and django. When the user connects, it fetches the name and profile picture of the user (other things can be added) and gets the user access token of the user which is stored in the database.
 
+# Requirements 
+
+Prerequisites
+1. Python3
+2. Virtual environment
+
+
+
 # Installation Instruction
 1. Clone or download the repository.
 2. Create a new virtual environment for the project. 
@@ -10,12 +18,17 @@ virtualenv -p python3 myenv
 source myenv/bin/activate
 
 ```
-3. Go in the repository and install required libraries in the requirements.txt file
+# Dependencies
+1. social-auth-app-django
+```
+pip install django social-auth-app-django 
 
 ```
-pip install -r requirements.txt
-
+2. Djago restframe work
 ```
+pip install django djangorestframework
+```
+
 4. Run the migration 
 ```
 python manage.py migrate
